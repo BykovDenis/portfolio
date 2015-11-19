@@ -1,0 +1,120 @@
+@import "variables.scss";
+
+body{
+    width: 100%;
+}
+
+.clearfix{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.main{
+    
+    width: $width-page;    
+    margin: 0 auto;
+    padding: 0;
+    background-image: -webkit-linear-gradient($color-light-gray 25%, $color-white 50%, $color-light-gray 75%, $color-white 100%);
+    background-image: -o-linear-gradient($color-light-gray 25%, $color-white 50%, $color-light-gray 75%, $color-white 100%);
+    background-image: linear-gradient($color-light-gray 25%, $color-white 50%, $color-light-gray 75%, $color-white 100%);
+    
+    
+    &__layout{
+        
+        padding: 30px 10px 50px 10px;
+        
+        
+        & h1{
+            font: normal #{$font-size-h1}/#{$line-height-h1} $font-family;    
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        
+        & h2{
+            font: normal #{$font-size-h2}/#{$line-height-h2} $font-family;    
+            margin: 0;
+            margin-bottom: 60px;
+        }
+        
+        & p{
+            font: normal #{$font-size}/#{$line-height} $font-family;
+        }
+        
+
+    }
+    
+    &__content{
+        float: left;
+        max-width: 500px;
+        margin-left: 100px;
+        
+    }
+    
+    &__avatar{
+        
+        width: 200px;
+        height: 256px;
+        
+        box-shadow: 2px 2px 3px 2px $color-gray;
+        border-radius: 15px;
+        float: left;
+        margin-left: 30px;
+        
+        & img{
+            border-radius: 15px;                    
+            filter: sepia(0.2) saturate(1.2);
+            -webkit-filter: sepia(0.2) saturate(1.2);
+            -moz-filter: sepia(0.2) saturate(1.2);
+        }
+    }
+    
+    &__skills{
+        margin:0;
+        padding:0;
+        list-style-type: none;   
+        
+        li::before{
+            
+        }
+        
+        li{
+            line-height: $line-height*1.5;
+        }
+        
+    }
+    
+}
+
+.portfolio{
+    
+    outline: 1px solid red;
+    
+    &__work1{
+        float:left;
+        width: 620px;
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.3);
+        
+        h3{
+            text-align: center;
+            font: normal #{$font-size-h3}/#{$line-height-h3} $font-family;
+        }
+        
+        ul{
+            padding:0;
+        }
+        
+        li {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+    }
+    
+    h2{
+        text-align: center;
+        font: normal #{$font-size-h2}/#{$line-height-h2} $font-family; 
+    }
+    
+
+}

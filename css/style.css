@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* шрифт */
+/* цвет на странице */
+body {
+  width: 100%;
+}
+
+.clearfix {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.main {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: -webkit-linear-gradient(#dcd6d2 25%, #fff 50%, #dcd6d2 75%, #fff 100%);
+  background-image: -o-linear-gradient(#dcd6d2 25%, #fff 50%, #dcd6d2 75%, #fff 100%);
+  background-image: linear-gradient(#dcd6d2 25%, #fff 50%, #dcd6d2 75%, #fff 100%);
+}
+
+.main__layout {
+  padding: 30px 10px 50px 10px;
+}
+
+.main__layout h1 {
+  font: normal 24px/24px "Fira Sans", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.main__layout h2 {
+  font: normal 20px/20px "Fira Sans", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.main__layout p {
+  font: normal 16px/16px "Fira Sans", "Arial", sans-serif;
+}
+
+.main__content {
+  float: left;
+  max-width: 500px;
+  margin-left: 100px;
+}
+
+.main__avatar {
+  width: 200px;
+  height: 256px;
+  box-shadow: 2px 2px 3px 2px #ccc;
+  border-radius: 15px;
+  float: left;
+  margin-left: 30px;
+}
+
+.main__avatar img {
+  border-radius: 15px;
+  filter: sepia(0.2) saturate(1.2);
+  -webkit-filter: sepia(0.2) saturate(1.2);
+  -moz-filter: sepia(0.2) saturate(1.2);
+}
+
+.main__skills {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main__skills li {
+  line-height: 24px;
+}
+
+.portfolio {
+  outline: 1px solid red;
+}
+
+.portfolio__work1 {
+  float: left;
+  width: 620px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio__work1 h3 {
+  text-align: center;
+  font: normal 18px/18px "Fira Sans", "Arial", sans-serif;
+}
+
+.portfolio__work1 ul {
+  padding: 0;
+}
+
+.portfolio__work1 li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font: normal 20px/20px "Fira Sans", "Arial", sans-serif;
+}
