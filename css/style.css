@@ -25,13 +25,13 @@ body {
 }
 
 .main__layout h1 {
-  font: normal 24px/24px "Fira Sans", "Arial", sans-serif;
+  font: normal 26px/24px "Fira Sans", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 30px;
 }
 
 .main__layout h2 {
-  font: normal 20px/20px "Fira Sans", "Arial", sans-serif;
+  font: normal 24px/20px "Fira Sans", "Arial", sans-serif;
   margin: 0;
   margin-bottom: 60px;
 }
@@ -72,31 +72,45 @@ body {
   line-height: 24px;
 }
 
-.portfolio {
-  outline: 1px solid red;
-}
-
-.portfolio__work1 {
+.main__sertificate {
   float: left;
-  width: 620px;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin-left: 100px;
 }
 
-.portfolio__work1 h3 {
+.main__sertificate h2 {
   text-align: center;
-  font: normal 18px/18px "Fira Sans", "Arial", sans-serif;
 }
 
-.portfolio__work1 ul {
+.portfolio__work {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  height: 600px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.portfolio__work h3 {
+  text-align: center;
+  font: normal 20px/18px "Fira Sans", "Arial", sans-serif;
+}
+
+.portfolio__work ul {
   padding: 0;
+  text-align: center;
 }
 
-.portfolio__work1 li {
+.portfolio__work li {
   display: inline-block;
   vertical-align: top;
 }
 
+.portfolio__work li:last-of-type {
+  margin-right: 0;
+}
+
 .portfolio h2 {
   text-align: center;
-  font: normal 20px/20px "Fira Sans", "Arial", sans-serif;
+  font: normal 24px/20px "Fira Sans", "Arial", sans-serif;
 }
