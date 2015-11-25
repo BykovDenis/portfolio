@@ -19,11 +19,12 @@ body{
     background-image: -o-linear-gradient($color-light-gray 25%, $color-white 50%, $color-light-gray 75%, $color-white 100%);
     background-image: linear-gradient($color-light-gray 25%, $color-white 50%, $color-light-gray 75%, $color-white 100%);
     
+    box-shadow: 5px 0 10px 2px rgba(0,0,0,0.3), -5px 0 10px 2px rgba(0,0,0,0.3);
+    
     
     &__layout{
         
-        padding: 30px 10px 50px 10px;
-        
+        padding: 30px 10px 0px;
         
         & h1{
             font: normal #{$font-size-h1}/#{$line-height-h1} $font-family;    
@@ -33,8 +34,7 @@ body{
         
         & h2{
             font: normal #{$font-size-h2}/#{$line-height-h2} $font-family;    
-            margin: 0;
-            margin-bottom: 60px;
+            margin: 0;            
         }
         
         & p{
@@ -46,22 +46,23 @@ body{
     
     &__content{
         float: left;
-        max-width: 500px;
-        margin-left: 100px;
+        max-width: 400px;
+        margin-left: 40px;
         
     }
     
     &__avatar{
         
-        width: 200px;
-        height: 256px;
+        width: 300px;
         
-        box-shadow: 2px 2px 3px 2px $color-gray;
-        border-radius: 15px;
-        float: left;
-        margin-left: 30px;
         
-        & img{
+        box-shadow: 2px 2px 3px 3px $color-gray;
+        border-radius: 15px;                
+        margin-bottom: 30px;
+        text-align: center;
+        
+        & img{            
+            padding: 20px;
             border-radius: 15px;                    
             filter: sepia(0.2) saturate(1.2);
             -webkit-filter: sepia(0.2) saturate(1.2);
@@ -72,32 +73,118 @@ body{
     &__skills{
         margin:0;
         padding:0;
-        list-style-type: none;   
-        
-        li::before{
-            
-        }
-        
+        margin-left: 50px;
+        padding-top: 20px;
+        list-style-type:circle;
+                
         li{
+            display: inline-block;
             line-height: $line-height*1.5;
-        }
-        
-    }
-    
-    &__sertificate{
-        float: left;
-        max-width: 500px;
-        margin-left: 100px;
-        
-        h2{
-            text-align: center;
+            font-size: $font-size*1.3;
+            margin-left: 30px;
         }
         
     }
     
 }
 
+.sertificate{
+        float: left;        
+    
+        
+       &__header{
+            text-align: center;
+        }
+        
+        &__content{
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 40px 0;
+             
+            
+            li{
+                
+                display: inline-block;
+                vertical-align: top;
+                
+            }
+            
+            li:hover{
+                
+                cursor: pointer;
+                
+            }
+            
+        }
+    
+        &__preview{            
+            
+            display: none;
+            position: absolute;
+            
+            
+            background-color: white;
+            text-align: center;
+                    
+            border: 1px solid black;                
+
+            top: 50px;
+            left: 50%;
+
+            transform: translateX(-50%); 
+            
+        }
+    
+        &__layout{
+            
+            padding: 50px;
+        
+        }
+    
+        &__close:hover{
+
+            cursor: pointer;
+            
+        }
+    
+         &__close::before{
+             
+             
+             position: absolute;
+             top:10px;
+             right:10px;
+             
+             display: inline-block;
+             vertical-align: middle;
+             text-align: center;
+             width: 30px;
+             height: 30px;
+             content:'X';
+             font-size: 26px;
+             border: 1px solid black;
+             border-radius: 50%;
+             -moz-border-radius: 50%;
+             -webkit-border-raduis: 50%;
+             
+             padding: 0;
+             margin: 0;
+             
+             
+         }   
+        
+    }
+
 .portfolio{
+    
+    &__header{        
+
+        font: normal #{$font-size-h2}/#{$line-height-h2} $font-family;    
+        margin: 0;                    
+        padding-bottom: 20px;
+        text-align: center;
+        
+    }
         
     &__work{
         float:left;
@@ -116,6 +203,7 @@ body{
         ul{
             padding:0;
             text-align: center;
+            list-style-type: none;
         }
         
         li {
@@ -127,12 +215,7 @@ body{
             margin-right: 0;
         }
         
-    }
-    
-    h2{
-        text-align: center;
-        font: normal #{$font-size-h2}/#{$line-height-h2} $font-family; 
-    }
+    }    
     
 
 }

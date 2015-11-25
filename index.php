@@ -9,36 +9,46 @@
         <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>        
-        <main class="main">
+        <main class="main clearfix">
             <div class="main__layout clearfix">
-                <div class="main__avatar">
-                <img src="img/bykov.jpg" width="250" height="256">
-                </div> 
                 <div class="main__content">              
                     <h1>Быков Денис Станиславович</h1>
-                    <h1>WEB-мастер</h1>
-                    <p>Занимаюсь WEB разработкой более 3-х лет</p>
-                    <ul class="main__skills">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Препроцессор SASS</li>
-                        <li>JavaScript/JQuery</li>
-                        <li>PHP</li>
-                        <li>MySQL/MSSQL</li>
-                    </ul>
+                    <h2>WEB-мастер</h2>  
+                    <div class="main__avatar">                
+                        <img src="img/bykov.jpg" width="250" height="256">                
+                    </div>  
                 </div> 
-                <div class="main__sertificate">
-                   <h2>Сертификаты</h2>
-                    <ul>
+                <div class="sertificate">
+                   <h2 class="sertificate__header">Сертификаты</h2>
+                    <ul class="sertificate__content">
                         <li>
-                           <img src="img/HTMLAcademy_HTML_CSS.jpg" width="200">
+                           <img src="img/htmlacademy_preview.jpg" height="300" id="img_htmlacademy">
                         </li>
-                    </ul>
+                        <li>                            
+                            <img src="img/php_preview.jpg" width="300" id="img_php">
+                        </li>
+                        <li>                        
+                            <img src="img/javascript_preview.jpg" width="300" id="img_javascript">
+                        </li>
+                    </ul>    
                 </div>           
-            </div>   
+                <div class="sertificate__preview">
+                    <div class="sertificate__layout"></div>
+                    <i class="sertificate__close" id="sertificate__close"></i>
+                </div>
+            </div>               
+            <ul class="main__skills">
+                <li><h3>Основные навыки:</h3></li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Препроцессор SASS</li>
+                <li>JavaScript/JQuery</li>
+                <li>PHP</li>
+                <li>MySQL/MSSQL</li>
+            </ul>
             <div class="main__layout">
                 <section class="portfolio">  
-                    <h2>Верстка макетов</h2> 
+                    <h2 class="portfolio__header">Верстка макетов</h2> 
                     <div class="portfolio__work">
                         <h3>Sedona</h3>
                         <ul>
@@ -92,5 +102,8 @@
                 </section>    
             </div>
         </main>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/script.js"></script>
+            
     </body>
 </html>
