@@ -15,17 +15,23 @@
                     <h1>Быков Денис Станиславович</h1>
                     <h2>WEB-мастер</h2>  
                     <div class="main__avatar">                
-                        <img src="img/bykov.jpg" width="250" height="256">                
+                        <img src="img/bykov.jpg" width="250">                
                     </div>  
                 </div> 
                 <div class="sertificate">
-                   <h2 class="sertificate__header">Сертификаты</h2>
-                    <ul class="sertificate__content">
+                    <h2 class="sertificate__header">Контакты:
+                    
+                    <a href="mailto:ya.bykovdenis@ya.ru" target="_blank">ya.bykovdenis@ya.ru </a>                    
+                    <a href="https://github.com/BykovDenis"  target="_blank">github.com/BykovDenis</a>
+                    </h2>                      
+                       <ul class="sertificate__content">
                         <li>
                            <img src="img/htmlacademy_preview.jpg" height="300" id="img_htmlacademy">
                         </li>
                         <li>                            
                             <img src="img/php_preview.jpg" width="300" id="img_php">
+                            <br><br><br>
+                            <h2 class="sertificate__header">Сертификаты</h2>   
                         </li>
                         <li>                        
                             <img src="img/javascript_preview.jpg" width="300" id="img_javascript">
@@ -41,7 +47,7 @@
                 <li><h3>Основные навыки:</h3></li>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>Препроцессор SASS</li>
+                <li>GRUNT JADE SASS</li>
                 <li>JavaScript/JQuery</li>
                 <li>PHP</li>
                 <li>MySQL/MSSQL</li>
@@ -75,6 +81,16 @@
                         </ul>
                     </div>   
                     <div class="portfolio__work">
+                        <h3>Modern look</h3>
+                        <ul>
+                            <li>
+                                <a href="http://pharminfo.nichost.ru/modern_look/index.html" target="_blank">
+                                    <img src="img/modern_look_index.jpg" width="300" height="1254" alt="Главная страница">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  					
+                    <div class="portfolio__work">
                         <h3>Jewelery</h3>
                         <ul>
                             <li>
@@ -103,7 +119,6 @@
             </div>
         </main>
         <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/script.js"></script>
-            
+        <script src="js/script.js"></script>            
     </body>
 </html>

@@ -89,11 +89,17 @@ body{
 }
 
 .sertificate{
-        float: left;        
+        float: left;  
+    
+    a{
+      padding-left: 40px;  
+    }
     
         
        &__header{
-            text-align: center;
+           text-align: center;
+           display: inline-block;
+           padding-left: 40px;
         }
         
         &__content{

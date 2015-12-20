@@ -81,8 +81,14 @@ body {
   float: left;
 }
 
+.sertificate a {
+  padding-left: 40px;
+}
+
 .sertificate__header {
   text-align: center;
+  display: inline-block;
+  padding-left: 40px;
 }
 
 .sertificate__content {
