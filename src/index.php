@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>
-                 
-      Быков Денис Станиславович
-    </title>
+    <meta name="Description" content="Профессиональная верстка сайтов, посадочных страниц, фронтенд разработка"/>
+    <meta name="Keywords" content="Верстка сайта, разработка сайтов, веб сайт, web сайт, frontend,  лендинг пейдж, landing page"/>
+    <title>Профессиональная верстка сайтов, посадочных страниц, фронтенд разработка</title>
+    <link href="favicon.png" sizes="16x16" type="image/png"/>
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
   </head>
@@ -18,7 +18,7 @@
           <div class="main__avatar"><img src="img/bykov.jpg" width="250"/></div>
         </div>
         <div class="sertificate">
-          <h2 class="sertificate__header">Контакты</h2><a href="mailto:ya.bykovdenis@ya.ru" target="_blank">ya.bykovdenis@ya.ru</a><a href="https://github.com/BykovDenis" target="_blank">github.com/BykovDenis</a>
+          <h2 class="sertificate__header">Контакты<a href="mailto:ya.bykovdenis@ya.ru" target="_blank">ya.bykovdenis@ya.ru</a><a href="https://github.com/BykovDenis" target="_blank">github.com/BykovDenis</a></h2>
           <ul class="sertificate__content">
             <li><img src="img/htmlacademy_preview.jpg" height="300" id="img_htmlacademy"/></li>
             <li><img src="img/php_preview.jpg" width="300" id="img_php"/><br/><br/><br/>
