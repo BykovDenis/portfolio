@@ -38,7 +38,7 @@ html
             ul.main__skills
                 li 
                     h3 Основные навыки
-                -skills = ["HTML5", "CSS3", "GRUNT JADE SASS", "JavaScript/JQuery", "PHP", "MySQL/MSSQL"]
+                -skills = ["HTML5", "CSS3", "GRUNT JADE SASS/LESS", "JavaScript/JQuery", "PHP", "MySQL/MSSQL"]
                 each skill in skills
                     li #{skill}
             div.main__layout
@@ -49,23 +49,33 @@ html
                         ul
                             li
                                 a(href="http://bykovdenis.info/sedona/index.html" target="_blank")
-                                    img(src="img/sedona_index.jpg" width="300" height="647" alt="Главная страница")
+                                    img(src="img/sedona_index.jpg" width="300" alt="Главная страница")
                             li
                                 a(href="http://bykovdenis.info/sedona/inner.html"  target="_blank")
-                                    img(src="img/sedona_inner.jpg" width="300" height="219" alt="Страница каталога")
+                                    img(src="img/sedona_inner.jpg" width="300" alt="Страница каталога")
                     div.portfolio__work  
                         h3 Flat shoes
                         ul
                             li
                                 a(href="http://bykovdenis.info/flat_shoes/index.html" target="_blank")
-                                    img(src="img/flat_shoes_x300.jpg" width="300" height="602" alt="Главная страница") 
+                                    img(src="img/flat_shoes.jpg" width="300" alt="Главная страница") 
                                     
                     div.portfolio__work 
                         h3 Modern look
                         ul
                             li
                                 a(href="http://bykovdenis.info/modern_look/index.html" target="_blank")
-                                    img(src="img/modern_look_index.jpg" width="300" height="1254" alt="Главная страница")                  
+                                    img(src="img/modern_look_index.jpg" width="300"  alt="Главная страница") 
+                                    
+                    div.portfolio__work 
+                        h3 Technomart
+                        ul
+                            li
+                                a(href="http://bykovdenis.info/technomart/index.html" target="_blank")
+                                    img(src="img/technomart_index.jpg" width="300" alt="Главная страница")    
+                            li
+                                a(href="http://bykovdenis.info/technomart/catalog.html" target="_blank")
+                                    img(src="img/technomart_catalog.jpg" width="300"  alt="Каталог товаров")                                   
                     
                     div.portfolio__work                
                         h3 Pink
@@ -88,8 +98,6 @@ html
                             li
                                 a(href="http://bykovdenis.info/barbershop/catalog-price.html" target="_blank")
                                     img(src="img/barbershop_price.jpg" width="300" height="265" alt="Прайс-лист") 
-                    div.portfolio__work  
-                        h3 До нового года осталось
-                        <?php include("../../action_counter/index.php"); ?>
+        
         script(src="js/jquery-2.1.4.min.js")
         script(src="js/script.js")

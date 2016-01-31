@@ -37,7 +37,7 @@
         </li>
         <li>HTML5</li>
         <li>CSS3</li>
-        <li>GRUNT JADE SASS</li>
+        <li>GRUNT JADE SASS/LESS</li>
         <li>JavaScript/JQuery</li>
         <li>PHP</li>
         <li>MySQL/MSSQL</li>
@@ -48,20 +48,27 @@
           <div class="portfolio__work">
             <h3>Sedona</h3>
             <ul>
-              <li><a href="http://bykovdenis.info/sedona/index.html" target="_blank"><img src="img/sedona_index.jpg" width="300" height="647" alt="Главная страница"/></a></li>
-              <li><a href="http://bykovdenis.info/sedona/inner.html" target="_blank"><img src="img/sedona_inner.jpg" width="300" height="219" alt="Страница каталога"/></a></li>
+              <li><a href="http://bykovdenis.info/sedona/index.html" target="_blank"><img src="img/sedona_index.jpg" width="300" alt="Главная страница"/></a></li>
+              <li><a href="http://bykovdenis.info/sedona/inner.html" target="_blank"><img src="img/sedona_inner.jpg" width="300" alt="Страница каталога"/></a></li>
             </ul>
           </div>
           <div class="portfolio__work"> 
             <h3>Flat shoes</h3>
             <ul>
-              <li><a href="http://bykovdenis.info/flat_shoes/index.html" target="_blank"><img src="img/flat_shoes_x300.jpg" width="300" height="602" alt="Главная страница"/></a></li>
+              <li><a href="http://bykovdenis.info/flat_shoes/index.html" target="_blank"><img src="img/flat_shoes.jpg" width="300" alt="Главная страница"/></a></li>
             </ul>
           </div>
           <div class="portfolio__work"> 
             <h3>Modern look</h3>
             <ul>
-              <li><a href="http://bykovdenis.info/modern_look/index.html" target="_blank"><img src="img/modern_look_index.jpg" width="300" height="1254" alt="Главная страница"/></a></li>
+              <li><a href="http://bykovdenis.info/modern_look/index.html" target="_blank"><img src="img/modern_look_index.jpg" width="300" alt="Главная страница"/></a></li>
+            </ul>
+          </div>
+          <div class="portfolio__work"> 
+            <h3>Technomart</h3>
+            <ul>
+              <li><a href="http://bykovdenis.info/technomart/index.html" target="_blank"><img src="img/technomart_index.jpg" width="300" alt="Главная страница"/></a></li>
+              <li><a href="http://bykovdenis.info/technomart/catalog.html" target="_blank"><img src="img/technomart_catalog.jpg" width="300" alt="Каталог товаров"/></a></li>
             </ul>
           </div>
           <div class="portfolio__work">               
@@ -82,9 +89,6 @@
               <li><a href="http://bykovdenis.info/barbershop/catalog-item.html" target="_blank"><img src="img/barbershop_item.jpg" width="300" height="291" alt="Карточка товара"/></a></li>
               <li><a href="http://bykovdenis.info/barbershop/catalog-price.html" target="_blank"><img src="img/barbershop_price.jpg" width="300" height="265" alt="Прайс-лист"/></a></li>
             </ul>
-          </div>
-          <div class="portfolio__work"> 
-            <h3>До нового года осталось</h3><?php include("../../action_counter/index.php"); ?>
           </div>
         </section>
       </div>
