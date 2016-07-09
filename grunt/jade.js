@@ -15,7 +15,7 @@ module.exports = {
             cwd: 'src/jade',
             src: '**/*.jade',
             dest: 'src/',
-            ext: '.php'
+            ext: '.html'
         }]
     }
 };
