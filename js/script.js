@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+
+    $("#img_htmlacademy_js").click(function(){
+
+        $(".sertificate__layout").html('<img src="img/htmlacademy_javascript_preview.jpg" width="800">');
+        $(".sertificate__preview").css("display","block");
+
+    });
    
     $("#img_htmlacademy").click(function(){
        
