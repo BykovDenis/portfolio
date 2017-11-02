@@ -19,10 +19,11 @@
     "load-grunt-tasks": "^3.4.1"
   },
   "dependencies": {
+    "sass": "^1.0.0-beta.2",
     "time-grunt": "^1.3.0"
   },
   "scripts": {
-    "build": "grunt jade && grunt sass && grunt postcss && grunt csso && grunt imagemin",
-    "start": "npm run build && grunt serve"
+    "build": "grunt build",
+    "start": "grunt build && grunt serve"
   }
 }
