@@ -116,6 +116,7 @@ module.exports = function(grunt) {
                         "fonts/**/*.{woff, woff2, *}",
                         "img/**",
                         "js/**",
+                        "fonts/**",
                         "*.html"
                     ],
                     dest: "build"
@@ -137,12 +138,12 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            build: ["build"]
+            folder: 'build/'
         },
 
     });
 
     grunt.registerTask("serve", ["browserSync", "watch"]);
-    grunt.registerTask("build",["clean", "jade", "sass", "postcss", "csso", "imagemin", "uglify", "copy"])
-	
+    grunt.registerTask("build", ["clean", "uglify", "jade", "sass", "postcss", "csso", "imagemin", "copy"])
+
 };
