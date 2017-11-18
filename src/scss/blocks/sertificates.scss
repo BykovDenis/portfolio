@@ -1,0 +1,23 @@
+.sertificates {
+  width: 100%;
+  background-color: $color-brown;
+  &__layout {
+    margin: 0 auto;
+    padding: 0 60p;
+    width: 1080px;
+    height: 600px;
+  }
+  &__title {
+    text-align: center;
+    font-size: $font-size-h2;
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+}

@@ -155,13 +155,13 @@ module.exports = {
       use: ["source-map-loader"],
       enforce: "pre"
     }, {
-      test: /\.(gif|png|jpe?g|svg)$/i,
+      test: /\.(gif|png|jpg|jpe?g|svg)$/i,
       loaders: [
-        'file-loader?name=themes/owm/assets/img/[name].[ext]'
+        'file-loader?name=img/[name].[ext]'
       ]
     }, {
       test: /\.(woff|woff2|ttf|eot)([\?]?.*)$/i,
-      loader: 'file-loader?name=themes/owm/assets/fonts/[name].[ext]'
+      loader: 'file-loader?name=fonts/[name].[ext]'
     }]
   }
 };
