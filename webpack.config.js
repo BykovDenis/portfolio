@@ -3,7 +3,7 @@
  */
 require('babel-polyfill');
 // Установка режима работы сборщика
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const nodeEnv = process.env.NODE_ENV || 'development';
 // Режим очистки старых файлов билда при каждой сборке
 const REFRESH = process.env.REFRESH;
 // webpack.config.js
@@ -21,10 +21,9 @@ var DashboardPlugin = require('webpack-dashboard/plugin');
 // для плагина по минификации и оптимизации css
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const srcDir = 'src';
-const outputDir = 'build/';
-
-const assetsPath = path.resolve(__dirname, '../build');
+const buildPath = path.join(__dirname, './build');
+const jsSourcePath = path.join(__dirname, './src');
+const apiPath = path.join(__dirname, './src/js/api/');
 const host = (process.env.HOST || 'localhost');
 const port = (+process.env.PORT + 1) || 3001;
 
@@ -77,19 +76,93 @@ reactTransform[1].transforms.push({
   locals: ['module']
 });
 
+const plugins = [
+  new webpack.DefinePlugin({
+    'process.env': {
+      NODE_ENV: JSON.stringify(nodeEnv),
+    },
+  }),
+  // генерация html файла на основе шаблонизатора jade
+  new HtmlWebpackPlugin({
+    title: 'Title',
+    template: 'jade/index.jade',
+    inject: true,
+    minify:{
+      collapseWhitespace: false // Переносить теги на новую строку
+    }
+  }),
+  new DashboardPlugin(),
+  // Формировать отдельный css файл
+  new ExtractTextPlugin({
+    filename: 'css/[name].[hash].css',
+    allChunks: true
+  }),
+  // это функциональность webpack, предназначенная не только для быстрой подгрузки изменений на машине разработчика, но и для обновления сайтов в production
+  new webpack.HotModuleReplacementPlugin(),
+  // Плагин копирования файлов
+  new CopyWebpackPlugin([{
+    context: apiPath,
+    from: '**/*',
+    to: 'themes/owm/assets/data/'
+  }])
+];
+
+const rules = [{
+  test: /\.css$/,
+  loader: ExtractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: 'css-loader'
+  })
+},  {
+  test: /\.scss$/,
+  loader: ExtractTextPlugin.extract({
+    use: [
+      'css-loader?modules&importLoaders=2&localIdentName=[local]',
+      'postcss-loader',
+      'sass-loader'
+    ]
+  })
+}, {
+  test: /\.jade$/,
+  loader: "pug-loader",
+  query: {pretty: true}
+}, {
+  test: /\.jsx?$/,
+  exclude: /node_modules/,
+  use: [
+    { loader: 'babel-loader?' + JSON.stringify(babelLoaderQuery) },
+    { loader: 'eslint-loader' }
+  ]
+}, {
+  test: /\.js$/,
+  use: ['source-map-loader'],
+  enforce: 'pre',
+  exclude: [
+    /node_modules\/normalize-scroll-left/
+  ]
+}, {
+  test: /\.(gif|png|jpe?g|svg)$/i,
+  loaders: [
+    'file-loader?name=img/[name].[ext]'
+  ]
+}, {
+  test: /\.(woff|woff2|ttf|eot)([\?]?.*)$/i,
+  loader: 'file-loader?name=fonts/[name].[ext]'
+}];
+
 module.exports = {
-  context: __dirname + '/src/',
+  context: jsSourcePath,
+  devtool: 'source-map',
   entry: {
-    components: './js/',
-    components_styles: './scss'
+    sql_viewer: './js',
+    sql_viewer_styles: './scss'
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: buildPath,
     publicPath: '/',
     filename: 'js/[name].[hash].js',
     chunkFilename: 'js/[name].[hash].js'
   },
-  devtool: 'inline-source-map',
   // Определение расширений файлов по-умолчанию
   resolve: {
     modules: ['node_modules'],
@@ -100,100 +173,67 @@ module.exports = {
     extensions: [".webpack-loader.js", ".web-loader.js", ".babel-loader.js", ".loader.js", ".js"]
   },
   // Настройка плагинов
-  plugins: [
-    // генерация html файла на основе шаблонизатора jade
-    new HtmlWebpackPlugin({
-      title: 'Title',
-      template: 'jade/index.jade',
-      inject: true,
-      minify:{
-        collapseWhitespace: false // Переносить теги на новую строку
-      }
-    }),
-    new DashboardPlugin(),
-    // Формировать отдельный css файл
-    new ExtractTextPlugin({
-      filename: 'css/[name].[hash].css',
-      allChunks: true
-    }),
-    // это функциональность webpack, предназначенная не только для быстрой подгрузки изменений на машине разработчика, но и для обновления сайтов в production
-    new webpack.HotModuleReplacementPlugin(),
-    // Плагин копирования файлов
-    new CopyWebpackPlugin([{
-      context: __dirname + '/src/api',
-      from: '**/*',
-      to: 'themes/owm/assets/data/'
-    }]),
-    new webpack.LoaderOptionsPlugin({
-      debug: true
-    })
-  ],
+  plugins,
   module: {
-    rules: [{
-      test: /\.scss$/,
-      loader: ExtractTextPlugin.extract({
-        use: [
-          'css-loader?modules&importLoaders=2&localIdentName=[local]',
-          'postcss-loader',
-          'sass-loader'
-        ]
-      })
-    }, {
-      test: /\.jade$/,
-      loader: "jade-loader",
-      query: {pretty: true}
-    }, {
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loaders: [
-        'react-hot-loader',
-        'babel-loader?' + JSON.stringify(babelLoaderQuery),
-        'eslint-loader'
-        ]
-    }, {
-      test: /\.js$/,
-      use: ["source-map-loader"],
-      enforce: "pre"
-    }, {
-      test: /\.(gif|png|jpg|jpe?g|svg)$/i,
-      loaders: [
-        'file-loader?name=img/[name].[ext]'
-      ]
-    }, {
-      test: /\.(woff|woff2|ttf|eot)([\?]?.*)$/i,
-      loader: 'file-loader?name=fonts/[name].[ext]'
-    }]
-  }
+    rules: rules,
+  },  devServer: {
+    contentBase: buildPath,
+    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/'
+    },
+    publicPath: '/',
+    stats: {
+      assets: true,
+      children: false,
+      chunks: false,
+      hash: false,
+      modules: false,
+      publicPath: true,
+      timings: true,
+      version: false,
+      warnings: true,
+      colors: {
+        green: '\u001b[32m',
+      },
+    },
+  },
 };
 
-if(NODE_ENV == 'production') {
+if (nodeEnv === 'production') {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      comments: false,
       compress: {
+        sequences: true,
+        booleans: true,
+        loops: true,
+        unused: true,
         warnings: false,
         drop_console: true,
         unsafe: true
       }
-    })
-  );
-  module.exports.plugins.push(
+    }),
     new OptimizeCssAssetsPlugin({ // Оптимизация и минификация сгенерированного css кода
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
       cssProcessorOptions: { discardComments: {removeAll: true } },
       canPrint: true
-    }));
+    }),
+    new webpack.optimize.OccurrenceOrderPlugin()
+  );
 }
 
-// if(NODE_ENV == 'development') {
+if (nodeEnv === 'development') {
   module.exports.plugins.push(
     new webpack.LoaderOptionsPlugin({
       debug: true
     })
   );
-// }
+}
 
-if(REFRESH == 'refresh') {
+if (REFRESH === 'refresh') {
   module.exports.plugins.push(
     // Чистить папку с билдом перед каждой сборкой
     new CleanWebpackPlugin('build/', {
