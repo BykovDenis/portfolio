@@ -1,0 +1,30 @@
+.experience {
+  width: 100%;
+  min-width: 1200px;
+  background-color: $color-brown;
+  &__layout {
+    margin: 0 auto;
+    padding: 0 60p;
+    width: 1080px;
+    min-height: 300px;
+  }
+  &__title {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: $font-size-h2;
+    color: $font-color-inverted;
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+}

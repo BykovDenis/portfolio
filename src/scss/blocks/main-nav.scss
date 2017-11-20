@@ -1,0 +1,32 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  &__lnk {
+    color: $font-color-inverted;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      opacity: .7;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  &__item {
+    margin-left: 20px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  &__lnk {
+    margin-top: 12px;
+  }
+}

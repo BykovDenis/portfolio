@@ -1,0 +1,32 @@
+.main-header {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 600px;
+  background-color: $bg-header-color;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .3) 0% , rgba(0, 0, 0, .3) 30%, transparent 100%),
+  linear-gradient(to bottom, rgba(171, 23, 142, .21) 0% , rgba(171, 23, 142, .21) 30%, rgba(252, 116, 193, .1) 100%);
+  &__layout {
+    margin: 0 auto;
+    width: 1080px;
+    padding: 0 60px;
+    background: url($base-url-img + 'bg-main.jpg') 0 0 no-repeat;
+    background-size: 1200px 600px;
+    min-height: 600px;
+  }
+  &__title {
+    margin: 0;
+    margin-left: 135px;
+    font-size: $font-size-h2;
+    font-weight: 700;
+    text-align: center;
+    color: $font-color-inverted;
+  }
+  &__middle {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+

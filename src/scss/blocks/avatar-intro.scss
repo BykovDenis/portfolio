@@ -1,0 +1,11 @@
+.avatar-intro {
+  margin: 0;
+  max-width: 300px;
+  color: $font-color-inverted;
+  font-size: #{$base-font-size + 8px};
+  font-weight: 400;
+  & span {
+    color: $color-yellow;
+    font-size: #{$base-font-size * 2 + 4px};
+  }
+}
