@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  &__item {
+    margin-left: 20px;
+  }
+  &__lnk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    font-size: 0;
+    text-decoration: none;
+    background-color: $color-white;
+    &:hover {
+      background-color: $color-black1;
+      i {
+        color: $font-color-inverted;
+      }
+    }
+    & i {
+      font-size: $font-size-icon;
+      color: $font-color;
+    }
+  }
+}

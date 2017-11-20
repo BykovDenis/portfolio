@@ -8,6 +8,7 @@ import { bindActionCreators } from 'redux';
 import * as getActionData from '../redux/actions/actions';
 // подгрузка компонентов
 import Button from '../components/button/button';
+import Toggler from '../components/toggler';
 
 class ReactComponent extends Component {
   static get propTypes() {
@@ -49,7 +50,7 @@ class ReactComponent extends Component {
     console.dir(totalSelector(this.state));
     return (
       <div>
-        custom component
+        <Toggler />
         <br />
         <Button
           btnProps={{

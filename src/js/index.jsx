@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducer from './redux/combineReducer';
 // Импорт кастомных компонент
-import ReactComponent from './containers/container';
+import ReactComponent from './containers/portfolio';
 
 const middlewares = [thunk];
 let devTools;

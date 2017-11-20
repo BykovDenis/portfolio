@@ -5,6 +5,7 @@ html
     title Portfolio Bykov Denis
     <!-- Google Fonts -->
     link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800' rel='stylesheet' type='text/css')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
   body
     header.main-header
       .main-header__layout
@@ -23,8 +24,14 @@ html
             li.main-nav__item
               a.main-nav__lnk(href='#') Contacts
         section.main-header__middle
-          div.avatar
-            img.avatar__img(src="img/img-avatar.jpg" alt="Bykov Denis Frontend developer")
+          .main-header__card
+            div.avatar
+              img.avatar__img(src="img/img-avatar.jpg" alt="Bykov Denis Frontend developer")
+            p.avatar-intro
+              span Hello,
+              |  I am Bykov Denis
+              |  FrontEnd Developer
+              |  FrontEnd Mentor
           h2.main-header__title Welcome
     main.main
       h1.main__title Bykov Denis Frontend Developer
@@ -94,8 +101,10 @@ html
             li.sertificates__item
               a.sertificates__lnk(href="#")
                 img.sertificates__img(src="img/img-htmlcss-basic.jpg" width="260" height="366" alt="Sertificate HTML CSS Basic from htmlacademy")
-      section.portfolio#component
-      section.sertificates
+      section.portfolio
+        .portfolio__layout
+          h2.portfolio__title Portfolio
+          div#component
       section.experience
         .experience__layout
           h2.experience__title Experience
@@ -111,14 +120,23 @@ html
                 img.experience__img(src="img/img-logo-rambler.jpg" width="340" height="163" alt="Rabmler&Co")
     footer.main-footer
       .main-footer__layout
-        .contacts Быков Денис Станиславович email: frontend@bykovdenis.info
+        .contacts Быков Денис Станиславович email:
+          a.contacts__lnk(href="mailto:frontend@bykovdenis.info")  frontend@bykovdenis.info
         .copyright Moscow 2017
         ul.socials
-          li.socials_item
-            a.socials_lnk(href="#") Github
-          li.socials_item
-            a.socials_lnk(href="#") Facebook
-          li.socials_item
-            a.socials_lnk(href="#") Vkontakte
-          li.socials_item
-            a.socials_lnk(href="#") Twitter
+          li.socials__item
+            a.socials__lnk(href="https://github.com/BykovDenis")
+              i.fa.fa-github( aria-hidden="true")
+              | Github
+          li.socials__item
+            a.socials__lnk(href="https://www.facebook.com/DenisByk0v")
+              i.fa.fa-facebook(aria-hidden="true")
+              | Facebook
+          li.socials__item
+            a.socials__lnk(href="https://vk.com/dbykov82")
+              i.fa.fa-vk(aria-hidden="true")
+              | Vkontakte
+          li.socials__item
+            a.socials__lnk(href="https://twitter.com/BDenis2")
+              i.fa.fa-twitter(aria-hidden="true")
+              | Twitter
