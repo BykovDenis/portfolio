@@ -14,6 +14,7 @@
     "prefer-template": 2,
     "new-cap": [2, { "capIsNewExceptions": ["List", "Map", "Set"] }],
     "react/no-multi-comp": 0,
+    "react/jsx-boolean-value": 0,
     "react/prefer-stateless-function": 0,
     "react/jsx-no-target-blank": 2,
     "react/prop-types": 0,

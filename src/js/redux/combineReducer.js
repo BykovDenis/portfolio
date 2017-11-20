@@ -3,8 +3,8 @@
  */
 import { combineReducers } from 'redux';
 
-import Reducer from './reducers/reducer';
+import Portfolio from './reducers';
 
 export default combineReducers({
-  Reducer
+  Portfolio
 });

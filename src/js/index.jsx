@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducer from './redux/combineReducer';
 // Импорт кастомных компонент
-import ReactComponent from './containers/portfolio';
+import Portfolio from './containers/portfolio';
 
 const middlewares = [thunk];
 let devTools;
@@ -28,7 +28,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <ReactComponent />
+    <Portfolio />
   </Provider>,
   document.getElementById('component')
 );

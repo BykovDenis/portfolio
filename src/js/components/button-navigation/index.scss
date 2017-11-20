@@ -1,0 +1,26 @@
+.button-navigation {
+  display: block;
+  padding: 0;
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  background: url('../../../img/icon-arrow.png') 50% 50% no-repeat;
+  background-size: 32px 64px;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  cursor: pointer;
+  transition: box-shadow ease-in-out .3s;
+  &--next {
+    transform: rotate(180deg);
+  }
+  &:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .4);
+  }
+  &:focus {
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, .4);
+  }
+  &:active {
+    box-shadow: inset 0 1px 2px 2px rgba(0, 0, 0, .4);
+  }
+}
