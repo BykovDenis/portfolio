@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.scss';
 
-function SiteCard(props) {
+export default function SiteCard(props) {
   const data = props.data;
   return (
     <a className={styles['site-card']} href={data.href} target="_blank" rel="noreferrer noopener">
@@ -17,5 +17,3 @@ function SiteCard(props) {
 SiteCard.propTypes = {
   data: PropTypes.shape.isRequired,
 };
-
-export default SiteCard;

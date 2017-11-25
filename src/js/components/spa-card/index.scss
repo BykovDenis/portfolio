@@ -1,0 +1,36 @@
+.spa-card {
+  margin: 0;
+  margin-right: 50px;
+  color: #333333;
+  text-decoration: none;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__container {
+    height: 390px;
+    max-height: 390px;
+    overflow: hidden;
+    width: 500px;
+    min-width: 502px;
+    border: 1px dotted #000000;
+    border-radius: 10px;
+    &:hover {
+      border-style: dashed;
+    }
+  }
+  &__img {
+    margin: 0;
+    margin-right: 80px;
+    width: 500px;
+    min-width: 500px;
+  }
+}
