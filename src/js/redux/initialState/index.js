@@ -4,7 +4,7 @@
 const initialState = {
   siteStep: 0,
   spaStep: 0,
-  type: 'SPA',
+  type: 'html',
   SPASlides: [
     {
       name: 'Weather widget',
