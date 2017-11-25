@@ -103,7 +103,7 @@ const plugins = [
   new CopyWebpackPlugin([{
     context: apiPath,
     from: '**/*',
-    to: 'themes/owm/assets/data/'
+    to: 'data/'
   }])
 ];
 
@@ -154,8 +154,8 @@ module.exports = {
   context: jsSourcePath,
   devtool: 'source-map',
   entry: {
-    sql_viewer: './js',
-    sql_viewer_styles: './scss'
+    portfolio: './js',
+    portfolio_styles: './scss'
   },
   output: {
     path: buildPath,

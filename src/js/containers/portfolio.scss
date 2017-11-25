@@ -3,6 +3,9 @@
   min-width: 1200px;
   margin-bottom: 60px;
   &__container {
+    min-height: 438px;
+  }
+  &__slides {
     width: 1200px;
     margin: 0 auto;
     display: flex;

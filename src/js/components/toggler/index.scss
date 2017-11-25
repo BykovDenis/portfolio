@@ -7,6 +7,7 @@
   width: 380px;
   height: 40px;
   background-color: #854d4c;
+  transition: background-color 1s ease-in-out;
   border-radius: 20px;
   &__input {
     display: none;
