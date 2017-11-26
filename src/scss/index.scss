@@ -26,7 +26,7 @@ body {
 
 .fake {
   background-image:
-    url($base-url-img + 'img-logo.svg'),
+    url($base-url-img + 'img-logo.png'),
     url($base-url-img + 'img-avatar.jpg'),
     url($base-url-img + 'icon-js.png'),
     url($base-url-img + 'icon-react.png'),
@@ -57,6 +57,7 @@ body {
     url($base-url-img + 'img-jewelery.jpeg'),
     url($base-url-img + 'img-portfolio.jpg'),
     url($base-url-img + 'img-query-builder.jpg'),
-    url($base-url-img + 'img-openweathermap.jpg')
+    url($base-url-img + 'img-openweathermap.jpg'),
+    url($base-url-img + 'img-be-latte.jpg'),
     url($base-url-img + 'img-modern-look.jpg');
 }

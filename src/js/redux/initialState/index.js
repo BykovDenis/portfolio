@@ -51,6 +51,13 @@ const initialState = {
       height: '814',
     },
     {
+      name: 'Be Latte',
+      src: 'img/img-be-latte.jpg',
+      href: '//bykovdenis.info/be-latte',
+      width: '300',
+      height: '674',
+    },
+    {
       name: 'Technomart index',
       src: 'img/img-technomart-index.jpeg',
       href: '//bykovdenis.info/technomart',
