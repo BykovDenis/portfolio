@@ -58,6 +58,13 @@ const initialState = {
       height: '674',
     },
     {
+      name: 'Brandly',
+      src: 'img/img-brandly.jpg',
+      href: '//bykovdenis.info/brandly2',
+      width: '300',
+      height: '455',
+    },
+    {
       name: 'Technomart index',
       src: 'img/img-technomart-index.jpeg',
       href: '//bykovdenis.info/technomart',
