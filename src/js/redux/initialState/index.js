@@ -16,7 +16,7 @@ const initialState = {
     {
       name: 'Query Builder',
       src: 'img/img-query-builder.jpg',
-      href: 'https://owm.io/sql-builder',
+      href: 'https://owm.io/sql-viewer',
       width: '500',
       height: '289',
     },
