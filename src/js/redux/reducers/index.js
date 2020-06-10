@@ -2,7 +2,7 @@
  * Created by Denis on 18.04.2017.
  */
 import handleActions from 'redux-actions/lib/handleActions';
-import initialState from '../initialState';
+import initialState from '../data';
 import {
   NEXT_SITE_SLIDE,
   TYPE_PORTFOLIO,
