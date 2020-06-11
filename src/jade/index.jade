@@ -125,19 +125,25 @@ html
         a(name="Portfolio")
         div#component
       section.experience
-        .experience__layout
+        ul.experience__items
+          li.experience__item
+            a.experience__lnk(href='https://sbrf.ru')
+              img.experience__img(src="img/img-logo-sberbank.jpg" width="250" height="120" alt="Sberbank" target="_blank")
+          li.experience__item
+            a.experience__lnk(href='http://rigla.ru')
+              img.experience__img(src="img/img-logo-rigla.jpg" width="250" height="120" alt="Rigla drugstore" target="_blank")
+          li.experience__item
+            a.experience__lnk(href='//openweathermap.org')
+              img.experience__img(src="img/img-logo-owm.jpg" width="250" height="120" alt="Rigla drugstore" target="_blank")
+          li.experience__item
+            a.experience__lnk(href='//rambler-co.ru')
+              img.experience__img(src="img/img-logo-rambler.jpg" width="250" height="120" alt="Rabmler&Co" target="_blank")
+          li.experience__item
+            a.experience__lnk(href='https://htmlacademy.ru')
+              img.experience__img(src="img/img-logo-htmlacademy.jpg" width="250" height="120" alt="HtmlAcademy" target="_blank")
+      .experience__layout
           h2.experience__title Experience
           a(name="Experience")
-          ul.experience__items
-            li.experience__item
-              a.experience__lnk(href='http://rigla.ru')
-                img.experience__img(src="img/img-logo-rigla.jpg" width="340" height="163" alt="Rigla drugstore")
-            li.experience__item
-              a.experience__lnk(href='//openweathermap.org')
-                img.experience__img(src="img/img-logo-owm.jpg" width="340" height="163" alt="Rigla drugstore")
-            li.experience__item
-              a.experience__lnk(href='//rambler-co.ru')
-                img.experience__img(src="img/img-logo-rambler.jpg" width="340" height="163" alt="Rabmler&Co")
     footer.main-footer
       a(name="Contacts")
       .main-footer__layout
@@ -146,7 +152,7 @@ html
           br
           | email:
           a.contacts__lnk(href="mailto:frontend@bykovdenis.me")  frontend@bykovdenis.me
-        .copyright Moscow 2017
+        .copyright Moscow 2020
         ul.socials
           li.socials__item
             a.socials__lnk(href="https://github.com/BykovDenis")

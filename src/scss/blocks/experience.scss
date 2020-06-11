@@ -4,7 +4,7 @@
   background-color: $color-brown;
   &__layout {
     margin: 0 auto;
-    padding: 0 60p;
+    padding: 0 60px;
     width: 1080px;
     min-height: 300px;
   }
@@ -16,15 +16,14 @@
     color: $font-color-inverted;
   }
   &__items {
+    margin: 0 auto;
+    width: $container-width;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 0;
-  }
-  &__item {
-    margin-bottom: 20px;
+    padding: 20px 0;
   }
 }
