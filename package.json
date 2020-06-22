@@ -20,7 +20,8 @@
     "dev": "REFRESH=refresh webpack-dashboard -t 'porfolio' webpack-dev-server --inline --colors --hot --config webpack.config.js",
     "start-dev": "REFRESH=refresh NODE_ENV=development webpack-dashboard -t 'porfolio' webpack --colors --progress --config webpack.config.js",
     "prod": "REFRESH=refresh NODE_ENV=production webpack-dashboard -t 'porfolio' webpack-dev-server --hot --watch --colors --config webpack.config.js",
-    "start-prod": "REFRESH=refresh NODE_ENV=production webpack-dashboard -t 'porfolio' webpack --colors --progress --config webpack.config.js"
+    "start-prod": "REFRESH=refresh NODE_ENV=production webpack-dashboard -t 'porfolio' webpack --colors --progress --config webpack.config.js",
+    "release": "shipjs prepare"
   },
   "author": "Bykov Denis",
   "license": "ISC",
@@ -45,6 +46,7 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
+    "shipjs": "^0.20.1",
     "webpack": "3.x",
     "webpack-dashboard": "^0.3.0"
   },
