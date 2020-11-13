@@ -44,6 +44,13 @@ const initialState = {
       height: '466',
     },
     {
+      name: 'Travel Agency',
+      src: 'img/img-travelagency.jpg',
+      href: '//denisbykov.me/travel-agency',
+      width: '300',
+      height: '450',
+    },
+    {
       name: 'Modern look',
       src: 'img/img-modern-look.jpg',
       href: '//denisbykov.me/modern_look',
