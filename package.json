@@ -48,7 +48,7 @@
     "redbox-react": "^1.1.1",
     "shipjs": "^0.20.1",
     "webpack": "3.x",
-    "webpack-dashboard": "^0.3.0"
+    "webpack-dashboard": "^3.3.7"
   },
   "dependencies": {
     "autoprefixer-loader": "^3.2.0",
