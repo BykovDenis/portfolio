@@ -1,28 +1,34 @@
+import TPortfolio from "../types/tportfolio.ts";
+import SlideType from "../../enums/slide-type.ts";
+
 /**
  * Created by Denis on 18.04.2017.
  */
-const initialState = {
+const initialState: TPortfolio = {
   siteStep: 0,
   spaStep: 0,
-  type: 'html',
-  SPASlides: [
+  type: SlideType.Html,
+  spaSlides: [
     {
+      id: 'spa-slide-1',
       name: 'Weather widget',
-      src: 'img/img-openweathermap.jpg',
+      src: './src/img/img-openweathermap.jpg',
       href: 'https://openweathermap.org/city',
       width: '500',
       height: '487',
     },
     {
+      id: 'spa-slide-2',
       name: 'Query Builder',
-      src: 'img/img-query-builder.jpg',
+      src: './src/img/img-query-builder.jpg',
       href: 'https://owm.io/sql-viewer',
       width: '500',
       height: '289',
     },
     {
+      id: 'spa-slide-3',
       name: 'Portfolio',
-      src: 'img/img-portfolio.jpg',
+      src: './src/img/img-portfolio.jpg',
       href: 'https://denisbykov.me',
       width: '500',
       height: '451',
@@ -30,71 +36,81 @@ const initialState = {
   ],
   siteSlides: [
     {
+      id: 'site-slide-1',
       name: 'Pink',
-      src: 'img/img-pink.jpg',
+      src: './src/img/img-pink.jpg',
       href: '//denisbykov.me/pink',
       width: '300',
       height: '816',
     },
     {
+      id: 'site-slide-2',
       name: 'Flat shoes',
-      src: 'img/img-flat-shoes.jpg',
+      src: './src/img/img-flat-shoes.jpg',
       href: '//denisbykov.me/flat_shoes',
       width: '300',
       height: '466',
     },
     {
+      id: 'site-slide-3',
       name: 'Modern look',
-      src: 'img/img-modern-look.jpg',
+      src: './src/img/img-modern-look.jpg',
       href: '//denisbykov.me/modern_look',
       width: '300',
       height: '814',
     },
     {
+      id: 'site-slide-4',
       name: 'Be Latte',
-      src: 'img/img-be-latte.jpg',
+      src: './src/img/img-be-latte.jpg',
       href: '//denisbykov.me/be-latte',
       width: '300',
       height: '674',
     },
     {
+      id: 'site-slide-5',
       name: 'Brandly',
-      src: 'img/img-brandly.jpg',
+      src: './src/img/img-brandly.jpg',
       href: '//denisbykov.me/brandly2',
       width: '300',
       height: '455',
     },
     {
+      id: 'site-slide-6',
       name: 'Technomart index',
-      src: 'img/img-technomart-index.jpeg',
+      src: './src/img/img-technomart-index.jpeg',
       href: '//denisbykov.me/technomart',
       width: '300',
       height: '793',
     },
     {
+      id: 'site-slide-7',
       name: 'Technomart Catalog',
-      src: 'img/img-technomart-catalog.jpeg',
+      src: './src/img/img-technomart-catalog.jpeg',
       href: '//denisbykov.me/technomart',
       width: '300',
       height: '731',
     },
     {
+      id: 'site-slide-8',
       name: 'Jewelery',
-      src: 'img/img-jewelery.jpeg',
+      src: './src/img/img-jewelery.jpeg',
       href: '//denisbykov.me/jewelery/',
       width: '300',
       height: '1036',
     },
     {
+      id: 'site-slide-9',
       name: 'Sedona index',
-      src: 'img/img-sedona-index.jpeg',
+      src: './src/img/img-sedona-index.jpeg',
       href: '//denisbykov.me/sedona/',
       width: '300',
       height: '695',
     },
     {
+      id: 'site-slide-10',
       name: 'Sedona inner',
-      src: 'img/img-sedona-inner.jpeg',
+      src: './src/img/img-sedona-inner.jpeg',
       href: '//denisbykov.me/sedona/inner.html',
       width: '300',
       height: '293',
