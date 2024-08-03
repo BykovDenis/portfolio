@@ -3,8 +3,8 @@
  */
 import { combineReducers } from 'redux';
 
-import Portfolio from './reducers';
+import portfolio from './reducers/portfolio-slide';
 
 export default combineReducers({
-  Portfolio
+  portfolio
 });
