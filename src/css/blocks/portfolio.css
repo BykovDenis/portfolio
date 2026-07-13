@@ -1,0 +1,18 @@
+.portfolio {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.portfolio__layout {
+  margin: 0 auto;
+  padding: 0 60px;
+  width: 1080px;
+  min-height: 300px;
+}
+
+.portfolio__title {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: var(--font-size-h2);
+}

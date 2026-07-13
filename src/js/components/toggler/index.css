@@ -1,0 +1,44 @@
+.toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 380px;
+  height: 40px;
+  background-color: #854d4c;
+  transition: background-color 1s ease-in-out;
+  border-radius: 20px;
+}
+
+.toggler__input {
+  display: none;
+}
+
+.toggler__input:checked + label {
+  background-color: #af7775;
+}
+
+.toggler__label {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.toggler__label:first-of-type {
+  border-radius: 20px 0 0 20px;
+  text-align: left;
+}
+
+.toggler__label:last-of-type {
+  border-radius: 0 20px 20px 0;
+  text-align: right;
+}
+
+.toggler__label:hover {
+  cursor: pointer;
+}

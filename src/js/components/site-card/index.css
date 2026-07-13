@@ -1,0 +1,42 @@
+.site-card {
+  margin: 0;
+  margin-right: 74px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.site-card:last-of-type {
+  margin-right: 0;
+}
+
+.site-card:hover {
+  text-decoration: underline;
+}
+
+.site-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.site-card__container {
+  height: 390px;
+  max-height: 390px;
+  overflow: hidden;
+  width: 302px;
+  min-width: 302px;
+  border: 1px dotted #000000;
+  border-radius: 10px;
+}
+
+.site-card__container:hover {
+  border-style: dashed;
+}
+
+.site-card__img {
+  margin: 0;
+  margin-right: 80px;
+  width: 300px;
+  min-width: 300px;
+}

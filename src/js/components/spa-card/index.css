@@ -1,0 +1,42 @@
+.spa-card {
+  margin: 0;
+  margin-right: 50px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.spa-card:last-of-type {
+  margin-right: 0;
+}
+
+.spa-card:hover {
+  text-decoration: underline;
+}
+
+.spa-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.spa-card__container {
+  height: 390px;
+  max-height: 390px;
+  overflow: hidden;
+  width: 500px;
+  min-width: 502px;
+  border: 1px dotted #000000;
+  border-radius: 10px;
+}
+
+.spa-card__container:hover {
+  border-style: dashed;
+}
+
+.spa-card__img {
+  margin: 0;
+  margin-right: 80px;
+  width: 500px;
+  min-width: 500px;
+}

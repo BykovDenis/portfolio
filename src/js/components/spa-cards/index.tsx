@@ -1,6 +1,6 @@
 import React from 'react';
 import SPACard from '../spa-card';
-import './index.scss';
+import './index.css';
 import SpaCardContainer from './spa-card-container.js';
 import TSlideItem from '../../redux/types/tslide-item.js';
 import { useSelector } from 'react-redux';

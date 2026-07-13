@@ -2,7 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import SlideType from '../../enums/slide-type.js';
 import {getType} from "../../redux/selectors";
-import './index.scss';
+import './index.css';
 import {changeType} from "../../redux/reducers/portfolio-slide.ts";
 import TSpa from "../../redux/types/tspa.ts";
 

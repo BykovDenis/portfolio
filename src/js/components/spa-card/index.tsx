@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './index.css';
 import TSlideItem from "../../redux/types/tslide-item.ts";
 
 type TSiteCard = TSlideItem;
