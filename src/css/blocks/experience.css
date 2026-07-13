@@ -1,0 +1,32 @@
+.experience {
+  width: 100%;
+  min-width: 1200px;
+  background-color: var(--color-brown);
+}
+
+.experience__layout {
+  margin: 0 auto;
+  padding: 0 60px;
+  width: 1080px;
+  min-height: 300px;
+}
+
+.experience__title {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: var(--font-size-h2);
+  color: var(--font-color-inverted);
+}
+
+.experience__items {
+  margin: 0 auto;
+  width: var(--container-width);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0;
+}

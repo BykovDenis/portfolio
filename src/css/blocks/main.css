@@ -1,15 +1,18 @@
-@mixin visually-hidden() {
+.main {
+  min-width: 1300px;
+  margin: 0 auto;
+}
+
+.main__title {
   position: absolute;
   width: 1px;
   height: 1px;
-
   margin: -1px;
   padding: 0;
-
   border: 0;
   white-space: nowrap;
-
   clip-path: inset(100%);
+  /* stylelint-disable-next-line property-no-deprecated -- legacy fallback for browsers without clip-path support */
   clip: rect(0 0 0 0);
   overflow: hidden;
 }

@@ -1,0 +1,12 @@
+.avatar-intro {
+  margin: 0;
+  max-width: 300px;
+  color: var(--font-color-inverted);
+  font-size: calc(var(--base-font-size) + 8px);
+  font-weight: 400;
+}
+
+.avatar-intro span {
+  color: var(--color-yellow);
+  font-size: calc(var(--base-font-size) * 2 + 4px);
+}

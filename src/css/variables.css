@@ -1,0 +1,17 @@
+:root {
+  --page-width: 1300px;
+  --container-width: 1080px;
+
+  /* colors */
+  --color-brown: #784547;
+  --color-black: #000000;
+  --color-black1: #333333;
+  --color-white: #ffffff;
+  --color-yellow: #fcda91;
+  --bg-header-color: var(--color-brown);
+  --base-font-size: 16px;
+  --font-size-h2: 48px;
+  --font-size-icon: 32px;
+  --font-color: var(--color-black1);
+  --font-color-inverted: var(--color-white);
+}

@@ -4,7 +4,7 @@ import Toggler from '../components/toggler';
 import SiteCards from '../components/site-cards';
 import SPACards from '../components/spa-cards';
 import ButtonNavigation from '../components/button-navigation';
-import './portfolio.scss';
+import './portfolio.css';
 import SlideType from "../enums/slide-type.ts";
 import {useSelector} from "react-redux";
 import {getType} from "../redux/selectors";

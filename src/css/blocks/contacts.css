@@ -1,0 +1,12 @@
+.contacts {
+  width: 250px;
+}
+
+.contacts__lnk {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.contacts__lnk:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import SiteCard from '../site-card';
-import  './index.scss';
+import './index.css';
 import TSlideItem from '../../redux/types/tslide-item';
 import { useSelector } from 'react-redux';
 import {getSiteSlides, getSiteStep} from '../../redux/selectors';

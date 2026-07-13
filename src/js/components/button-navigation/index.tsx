@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import './index.scss';
+import './index.css';
 import {useDispatch} from "react-redux";
 import Direction from "../../enums/direction.ts";
 import {changeSiteStep, changeSPAStep} from '../../redux/reducers/portfolio-slide.ts';
